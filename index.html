@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain It</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Complain It</h1>
+    </header>
+
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                
+                <button type="button" onclick="loginUser()">Sign In</button>
+                <p class="error-message" id="loginError"></p>
+            </form>
+        </section>
+
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" required>
+
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" required>
+                
+                <label for="registerType">Account Type:</label>
+                <select id="registerType" required>
+                    <option value="customer">Customer</option>
+                    <option value="company">Company</option>
+                </select>
+                
+                <button type="button" onclick="registerUser()">Register</button>
+                <p class="error-message" id="registerError"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="application.js"></script>
+</body>
+</html>
